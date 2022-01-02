@@ -1,0 +1,22 @@
+main {
+  padding-bottom: var(--space-after-main);
+
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgb(255, 255, 255)
+    ),
+    no-repeat center/contain url("../assets/contact/bg.jpg") fixed;
+  background-clip: padding-box;
+}
+.content-outer-wrapper {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--standard-gap);
+}
+.content-inner-left {
+  max-width: 300px;
+  padding: var(--content-padding);
+}

@@ -1,0 +1,104 @@
+:root {
+  --main-background: rgb(255, 255, 255);
+  --header-background: rgba(255, 255, 255, 0.9);
+
+  --highlight-color: rgb(196, 181, 130);
+  --highlight-rgb: 196, 181, 130;
+
+  --font-color: #000000;
+  --active-color: rgba(55, 8, 224, 0.5);
+  --hover-color: rgb(95, 92, 92);
+
+  /* hamburger menu */
+  --overlay-color: rgba(206, 206, 206, 0.432);
+}
+
+/* Base Background */
+body {
+  background-color: var(--main-background);
+}
+footer {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Font Color */
+p,
+h1,
+h2,
+h3,
+a,
+a:visited,
+button,
+form > * {
+  color: var(--font-color);
+}
+
+/* Link */
+a:hover {
+  color: var(--hover-color);
+}
+a:active {
+  color: var(--active-color);
+}
+
+/* Heading */
+.h1-highlight {
+  color: var(--highlight-color);
+}
+
+/* Button */
+button:hover {
+  background-color: rgba(var(--highlight-rgb), 0.8);
+}
+button {
+  background-color: rgba(var(--highlight-rgb), 0.5);
+}
+
+/* Header */
+header {
+  background-color: transparent;
+}
+.opened{
+  background-color: var(--overlay-color);
+}
+.mobile-menu.opened .menu-contents{
+  background-color: var(--header-background);
+}
+.desktop-menu.opened {
+  background-color: var(--header-background); 
+}
+.mobile-menu .navigation-menu-icon {
+  background-color: var(--header-background);
+}
+
+/* Form */
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* experience.html */
+.card-content {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* experience-detail.html */
+.carousel-button {
+  background-color: rgba(var(--highlight-rgb), 0.2);
+}
+.carousel-button:hover {
+  background-color: var(--highlight-color);
+}
+.index-markers {
+  color: grey;
+}
+.active-marker {
+  color: var(--highlight-color);
+}
+.enlarged {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.overlay-wrapper {
+  background-color: var(--overlay-color);
+}

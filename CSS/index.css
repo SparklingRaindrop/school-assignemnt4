@@ -1,0 +1,86 @@
+main{
+  margin-top: var(--nav-height);
+}
+/* Introduction */
+.introduction {
+  padding: var(--section-separator);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--standard-gap);
+  flex: 1 1;
+}
+.introduction-inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* Don't delete justify-content! Necessary when it wraps */
+  justify-content: center;
+  gap: var(--standard-gap);
+  align-items: center;
+}
+.introduction-inner-wrapper > img {
+  /* for bigger screen 300px */
+  /* for smaller screen the other value */
+  max-width: min(calc(100vw / 3), 300px);
+  border-radius: 50%;
+}
+.introduction h1 {
+  max-width: 100%;
+  align-self: center;
+  display: inline;
+}
+.introduction p {
+  max-width: 80%;
+  line-height: 2rem;
+  align-self: center;
+}
+button {
+  padding: var(--button-input-padding);
+  border-radius: var(--border-radius);
+}
+
+/* Experience */
+.section {
+  padding: var(--section-separator);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--bigger-gap);
+}
+.experience-card {
+  width: 100%;
+  min-height: 30vh;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: var(--standard-gap);
+  flex: 1 1;
+}
+.card-image {
+  min-width: calc(375px - 2 * var(--content-padding));
+  min-height: 40vh;
+  border-radius: var(--border-radius);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-content {
+  max-width: max(375px, 45%);
+  padding: var(--content-padding);
+}
+.card-content p {
+  line-height: 1.5em;
+}
+.experience-card1 {
+  flex-wrap: wrap;
+}
+.card-image1 {
+  background-image: url(../assets/index/card1.jpg);
+}
+.experience-card2 {
+  flex-wrap: wrap-reverse;
+}
+.card-image2 {
+  background-image: url(../assets/index/card2.jpg);
+}

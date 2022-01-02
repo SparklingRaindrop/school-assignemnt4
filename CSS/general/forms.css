@@ -1,0 +1,34 @@
+form {
+  padding: var(--content-padding);
+  display: flex;
+  flex-direction: column;
+}
+label,
+button {
+  margin-top: var(--standard-gap);
+}
+input,
+button,
+textarea {
+  padding: var(--button-input-padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0.2em 0.4rem 0.7em rgba(0, 0, 0, 0.151);
+  flex-grow: 0;
+}
+input,
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+input:focus,
+textarea:focus {
+  border: 1px solid var(--highlight-color);
+}
+input:required:invalid,
+textarea:required:invalid {
+  border: 2px solid rgb(207, 82, 82);
+}
+button {
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid var(--highlight-color);
+}

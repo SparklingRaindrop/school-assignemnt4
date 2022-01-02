@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style></style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tsubasa Fujii" />
+    <meta
+      name="description"
+      content="This is Tsubasa Fujii's portfolio website."
+    />
+    <title>Tsubasa Fujii | Front-end Programmer</title>
+    <!-- General -->
+    <link rel="stylesheet" href="CSS/general/reset.css" />
+    <link rel="stylesheet" href="CSS/general/styles.css" />
+    <link rel="stylesheet" href="CSS/general/header.css" />
+    <link rel="stylesheet" href="CSS/general/footer.css" />
+    <link rel="stylesheet" href="CSS/general/colors.css" />
+    <link rel="stylesheet" href="CSS/general/forms.css" />
+    <link rel="stylesheet" href="CSS/general/typography.css" />
+    <!-- Page Exclusive -->
+    <link rel="stylesheet" href="CSS/index.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="JavaScript\general\header.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div id="menu">
+        <nav>
+          <div class="menu-contents">
+            <img src="assets\header\humburger-menu.svg" id="iconHamburger" class="navigation-menu-icon" alt="menu">
+            <img src="assets\header\cross.svg" id="iconCross" class="navigation-menu-icon" alt="close">
+            <ul>
+              <li class="current-page"><a href="index.html">Home</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="introduction">
+        <div class="introduction-inner-wrapper">
+          <h1>
+            Hello, I'm
+            <div class="h1-highlight">Tsubasa Fujii</div>
+            Front-end Programmer
+          </h1>
+          <img src="assets\index\portrait.jpg" alt="" />
+        </div>
+        <p>
+          I'm passionate, creative hard-worker who is studying front-end
+          programming in Stockholm, Sweden. <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+          laudantium sint voluptatum.
+        </p>
+        <button title="Sorry, it doesn't take you to anywhere at the moment">
+          more about me >>
+        </button>
+      </section>
+      <section class="section">
+        <h2>My Experience</h2>
+        <!-- card-start -->
+        <div class="experience-card experience-card1">
+          <div class="card-content">
+            <h3>educational background</h3>
+            <p>
+              I learned Java in programmering 1. Other than that, I have never
+              studied programming language nor web developing at school.
+              However, I have read books and tutorials and have played with HTML
+              & CSS since I was 10.
+            </p>
+          </div>
+          <div class="card-image card-image1">
+            <!-- card-image is set as background -->
+          </div>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div class="experience-card experience-card2">
+          <div class="card-image card-image2">
+            <!-- card-image is set as background -->
+          </div>
+          <div class="card-content">
+            <h3>previous job</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Accusantium saepe voluptatibus omnis repellat, nihil
+              laborum!
+            </p>
+          </div>
+        </div>
+        <!-- end -->
+        <button title="This button is dummy.">my experience >></button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-icons">
+        <a href="contact.html">
+          <img src="assets\footer\icon-mail.svg" alt="Contact me" />
+        </a>
+        <a href="https://twitter.com/t_frontend_dev">
+          <img src="assets\footer\icon-twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/tsubasa-fujii-b9a670220/">
+          <img src="assets\footer\icon-linkedin.svg" alt="Linkedin" />
+        </a>
+      </div>
+      <div class="copyright">made with &#9825; by Tsubasa Fujii</div>
+    </footer>
+  </body>
+</html>
+

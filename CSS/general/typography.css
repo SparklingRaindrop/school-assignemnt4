@@ -1,0 +1,76 @@
+/* General Typography */
+/*
+  "Josefin Sans" for Headings
+  "Roboto" - regular(font-weight: 400) for menu
+  "Roboto" - lighter(font-weight: 300) for sentences
+*/
+:root {
+  --copyright-font-size: 0.8rem;
+}
+.h1-highlight {
+  font-size: 1.5em;
+}
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+}
+h3,
+header,
+main,
+footer,
+ul,
+button {
+  font-family: "Roboto", sans-serif;
+}
+p,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* General */
+h3,
+button,
+label {
+  text-transform: capitalize;
+}
+
+/* Header */
+a,
+a:visited {
+  font-weight: bold;
+}
+nav li {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+/* Footer */
+.copyright {
+  font-size: var(--copyright-font-size);
+  text-align: center;
+}
+
+/* index.html */
+.introduction h1 {
+  font-size: 2rem;
+}
+.h1-highlight {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.introduction p {
+  font-size: 1.5rem;
+}
+
+/* experience-detail.html */
+.index-markers {
+  font-size: 1rem;
+}
+.index-markers {
+  text-align: center;
+}
