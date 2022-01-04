@@ -1,2 +1,2 @@
-import createCarousel from './carousel.js';
+import createCarousel from './carousel/carousel.js';
 createCarousel();

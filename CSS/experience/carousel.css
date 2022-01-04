@@ -24,6 +24,7 @@ img.carousel-item {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
 }
 #iconArrowPrevious {
     z-index: 1;

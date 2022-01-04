@@ -6,20 +6,20 @@ export default function createNavigationMenu(){
     const iconCross = $("#iconCross");
 
     initialize();
-    $(window).resize(menuManager);
 
     function initialize(){
-        // Buttons in hamburger menu
-        iconHamburger.click(function(){
-            iconHamburger.hide();
-            iconCross.show();
-            menu.show();
-            $('#menu').addClass('opened');
-        });
+        iconHamburger.click(openMenu);
         iconCross.click(closeMenu);
         menuManager();
+        $(window).resize(menuManager);
     }
 
+    function openMenu(){
+        iconHamburger.hide();
+        iconCross.show();
+        menu.show();
+        $('#menu').addClass('opened');
+    }
     function closeMenu(){
         $('#menu').removeClass('opened');
         iconCross.hide();
